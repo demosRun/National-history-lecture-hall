@@ -1,0 +1,362 @@
+10:59:50.821 INFO  --------------------------- 开始编译 --------------------------- 
+10:59:50.821 INFO  程序运行目录: D:\work\National history lecture hall 
+10:59:50.821 INFO  首次启动! 
+10:59:50.821 INFO  生成版本号: og1ci4is6e8 
+10:59:50.826 INFO  清理资源文件夹: D:\work\National history lecture hall\dist\static 
+10:59:50.827 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static 
+10:59:50.827 INFO  创建文件夹: D:\work\National history lecture hall\dist\static 
+10:59:50.827 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:59:50.827 DEBUG 读取网页标题: 页面 
+10:59:50.827 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+10:59:50.828 DEBUG 模块 home 因名称重复被重命名为 home0 
+10:59:50.828 INFO  开始处理模块: home 
+10:59:50.885 DEBUG 缓存模板: home./src/page/home.page 
+10:59:50.885 DEBUG 模板home处理用时: 57 毫秒! 
+10:59:50.886 INFO  文件夹不存在: D:/work/National history lecture hall/dist/static/resource 
+10:59:50.887 INFO  创建文件夹: D:/work/National history lecture hall/dist/static/resource 
+10:59:50.887 DEBUG css中的资源处理完毕! 
+10:59:50.887 DEBUG 使用postcss处理样式，使用了1个插件! 
+10:59:50.925 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static\css 
+10:59:50.926 INFO  创建文件夹: D:\work\National history lecture hall\dist\static\css 
+10:59:50.926 INFO  开始处理附属css中的资源 
+10:59:50.926 INFO  附属css中的资源处理完毕! 
+10:59:50.926 INFO  处理字体:{} 
+10:59:51.058 INFO  使用postcss处理完毕! 用时: 171 毫秒 
+10:59:51.058 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+10:59:51.058 INFO  正在处理script! 
+10:59:51.059 INFO  工程中只有一个页面! 
+10:59:51.060 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static\js 
+10:59:51.060 INFO  创建文件夹: D:\work\National history lecture hall\dist\static\js 
+10:59:51.060 DEBUG 选择将js合并到html中! 
+10:59:51.693 INFO  js中的资源处理完毕! 
+10:59:51.693 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+10:59:51.693 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+10:59:51.693 DEBUG 外部脚本数量: 2 
+10:59:51.693 DEBUG 处理脚本: jquery1.11.0 
+10:59:51.693 DEBUG 网络脚本: jquery1.11.0 
+10:59:51.693 DEBUG 处理脚本: main 
+10:59:51.693 INFO  读取文件: D:\work\National history lecture hall\src\main.js 
+10:59:51.693 DEBUG 输出scriptData 
+10:59:51.694 DEBUG 准备输出html! 
+10:59:51.695 INFO  发送重新页面需要刷新命令! 
+10:59:51.714 INFO  主要逻辑文件写出成功! 
+10:59:51.716 INFO  读取成功: D:\work\National history lecture hall\src\main.css 
+10:59:51.716 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/bg.jpg"] 
+10:59:51.716 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+10:59:51.718 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+10:59:51.718 INFO  读取成功: D:\work\National history lecture hall\src\main.js 
+10:59:51.744 INFO  写入文件: D:\work\National history lecture hall\dist\static\css\main.css 
+10:59:51.745 INFO  写入文件: D:\work\National history lecture hall\dist\static\js\autoReload.js 
+10:59:51.745 INFO  写入文件: D:\work\National history lecture hall\dist\static\js\main.js 
+11:00:56.417 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:00:56.418 INFO  --------------------------- 开始编译 --------------------------- 
+11:00:56.418 INFO  程序运行目录: D:\work\National history lecture hall 
+11:00:56.418 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:00:56.418 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:00:56.418 DEBUG 读取网页标题: 页面 
+11:00:56.418 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:00:56.418 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:00:56.418 INFO  开始处理模块: home 
+11:00:56.432 DEBUG 缓存模板: home./src/page/home.page 
+11:00:56.432 DEBUG 模板home处理用时: 14 毫秒! 
+11:00:56.432 DEBUG css中的资源处理完毕! 
+11:00:56.432 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:00:56.435 INFO  处理字体:{} 
+11:00:56.437 INFO  使用postcss处理完毕! 用时: 5 毫秒 
+11:00:56.437 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:00:56.437 INFO  正在处理script! 
+11:00:56.438 INFO  工程中只有一个页面! 
+11:00:56.438 DEBUG 选择将js合并到html中! 
+11:00:56.459 INFO  js中的资源处理完毕! 
+11:00:56.460 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:00:56.460 DEBUG 外部脚本数量: 2 
+11:00:56.460 DEBUG 处理脚本: jquery1.11.0 
+11:00:56.460 DEBUG 网络脚本: jquery1.11.0 
+11:00:56.460 DEBUG 处理脚本: main 
+11:00:56.460 DEBUG 输出scriptData 
+11:00:56.460 DEBUG 准备输出html! 
+11:00:56.462 INFO  发送重新页面需要刷新命令! 
+11:00:56.463 INFO  主要逻辑文件写出成功! 
+11:01:21.669 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:01:21.670 INFO  --------------------------- 开始编译 --------------------------- 
+11:01:21.670 INFO  程序运行目录: D:\work\National history lecture hall 
+11:01:21.670 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:01:21.670 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:01:21.670 DEBUG 读取网页标题: 页面 
+11:01:21.670 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:01:21.670 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:01:21.670 INFO  开始处理模块: home 
+11:01:21.678 DEBUG 缓存模板: home./src/page/home.page 
+11:01:21.678 DEBUG 模板home处理用时: 8 毫秒! 
+11:01:21.679 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/one-2.png"] 
+11:01:21.679 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+11:01:21.679 DEBUG css中的资源处理完毕! 
+11:01:21.679 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:01:21.680 INFO  处理字体:{} 
+11:01:21.681 INFO  使用postcss处理完毕! 用时: 2 毫秒 
+11:01:21.681 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:01:21.681 INFO  正在处理script! 
+11:01:21.682 INFO  工程中只有一个页面! 
+11:01:21.683 DEBUG 选择将js合并到html中! 
+11:01:21.698 INFO  js中的资源处理完毕! 
+11:01:21.698 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:01:21.698 DEBUG 外部脚本数量: 2 
+11:01:21.698 DEBUG 处理脚本: jquery1.11.0 
+11:01:21.698 DEBUG 网络脚本: jquery1.11.0 
+11:01:21.698 DEBUG 处理脚本: main 
+11:01:21.698 DEBUG 输出scriptData 
+11:01:21.698 DEBUG 准备输出html! 
+11:01:21.700 INFO  发送重新页面需要刷新命令! 
+11:01:21.704 INFO  主要逻辑文件写出成功! 
+11:02:15.537 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:02:15.538 INFO  --------------------------- 开始编译 --------------------------- 
+11:02:15.538 INFO  程序运行目录: D:\work\National history lecture hall 
+11:02:15.538 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:02:15.538 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:02:15.538 DEBUG 读取网页标题: 页面 
+11:02:15.538 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:02:15.538 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:02:15.538 INFO  开始处理模块: home 
+11:02:15.546 DEBUG 缓存模板: home./src/page/home.page 
+11:02:15.546 DEBUG 模板home处理用时: 8 毫秒! 
+11:02:15.547 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:02:15.547 DEBUG css中的资源处理完毕! 
+11:02:15.547 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:02:15.550 INFO  处理字体:{} 
+11:02:15.551 INFO  使用postcss处理完毕! 用时: 4 毫秒 
+11:02:15.551 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:02:15.551 INFO  正在处理script! 
+11:02:15.552 INFO  工程中只有一个页面! 
+11:02:15.553 DEBUG 选择将js合并到html中! 
+11:02:15.565 INFO  js中的资源处理完毕! 
+11:02:15.565 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:02:15.565 DEBUG 外部脚本数量: 2 
+11:02:15.565 DEBUG 处理脚本: jquery1.11.0 
+11:02:15.565 DEBUG 网络脚本: jquery1.11.0 
+11:02:15.565 DEBUG 处理脚本: main 
+11:02:15.565 DEBUG 输出scriptData 
+11:02:15.565 DEBUG 准备输出html! 
+11:02:15.567 INFO  发送重新页面需要刷新命令! 
+11:02:15.568 INFO  主要逻辑文件写出成功! 
+11:02:43.588 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:02:43.589 INFO  --------------------------- 开始编译 --------------------------- 
+11:02:43.589 INFO  程序运行目录: D:\work\National history lecture hall 
+11:02:43.589 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:02:43.589 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:02:43.589 DEBUG 读取网页标题: 页面 
+11:02:43.589 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:02:43.590 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:02:43.590 INFO  开始处理模块: home 
+11:02:43.597 DEBUG 缓存模板: home./src/page/home.page 
+11:02:43.597 DEBUG 模板home处理用时: 7 毫秒! 
+11:02:43.597 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:02:43.597 DEBUG css中的资源处理完毕! 
+11:02:43.597 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:02:43.599 INFO  处理字体:{} 
+11:02:43.600 INFO  使用postcss处理完毕! 用时: 3 毫秒 
+11:02:43.600 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:02:43.600 INFO  正在处理script! 
+11:02:43.600 INFO  工程中只有一个页面! 
+11:02:43.601 DEBUG 选择将js合并到html中! 
+11:02:43.614 INFO  js中的资源处理完毕! 
+11:02:43.614 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:02:43.614 DEBUG 外部脚本数量: 2 
+11:02:43.614 DEBUG 处理脚本: jquery1.11.0 
+11:02:43.614 DEBUG 网络脚本: jquery1.11.0 
+11:02:43.614 DEBUG 处理脚本: main 
+11:02:43.615 DEBUG 输出scriptData 
+11:02:43.615 DEBUG 准备输出html! 
+11:02:43.617 INFO  发送重新页面需要刷新命令! 
+11:02:43.618 INFO  主要逻辑文件写出成功! 
+11:04:18.349 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:04:18.349 INFO  --------------------------- 开始编译 --------------------------- 
+11:04:18.349 INFO  程序运行目录: D:\work\National history lecture hall 
+11:04:18.349 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:04:18.349 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:04:18.349 DEBUG 读取网页标题: 页面 
+11:04:18.349 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:04:18.350 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:04:18.350 INFO  开始处理模块: home 
+11:04:18.357 DEBUG 缓存模板: home./src/page/home.page 
+11:04:18.357 DEBUG 模板home处理用时: 7 毫秒! 
+11:04:18.358 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:04:18.358 DEBUG css中的资源处理完毕! 
+11:04:18.358 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:04:18.360 INFO  处理字体:{} 
+11:04:18.361 INFO  使用postcss处理完毕! 用时: 3 毫秒 
+11:04:18.361 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:04:18.361 INFO  正在处理script! 
+11:04:18.362 INFO  工程中只有一个页面! 
+11:04:18.363 DEBUG 选择将js合并到html中! 
+11:04:18.377 INFO  js中的资源处理完毕! 
+11:04:18.377 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:04:18.377 DEBUG 外部脚本数量: 2 
+11:04:18.377 DEBUG 处理脚本: jquery1.11.0 
+11:04:18.377 DEBUG 网络脚本: jquery1.11.0 
+11:04:18.377 DEBUG 处理脚本: main 
+11:04:18.377 DEBUG 输出scriptData 
+11:04:18.378 DEBUG 准备输出html! 
+11:04:18.378 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/one-0.png","D:/work/National history lecture hall/src/resource/one-1.png"] 
+11:04:18.378 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+11:04:18.381 INFO  发送重新页面需要刷新命令! 
+11:04:18.383 INFO  主要逻辑文件写出成功! 
+11:04:57.691 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:04:57.691 INFO  --------------------------- 开始编译 --------------------------- 
+11:04:57.691 INFO  程序运行目录: D:\work\National history lecture hall 
+11:04:57.691 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:04:57.691 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:04:57.692 DEBUG 读取网页标题: 页面 
+11:04:57.692 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:04:57.692 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:04:57.692 INFO  开始处理模块: home 
+11:04:57.700 DEBUG 缓存模板: home./src/page/home.page 
+11:04:57.700 DEBUG 模板home处理用时: 8 毫秒! 
+11:04:57.700 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:04:57.700 DEBUG css中的资源处理完毕! 
+11:04:57.700 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:04:57.703 INFO  处理字体:{} 
+11:04:57.704 INFO  使用postcss处理完毕! 用时: 4 毫秒 
+11:04:57.704 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:04:57.704 INFO  正在处理script! 
+11:04:57.705 INFO  工程中只有一个页面! 
+11:04:57.706 DEBUG 选择将js合并到html中! 
+11:04:57.720 INFO  js中的资源处理完毕! 
+11:04:57.720 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:04:57.720 DEBUG 外部脚本数量: 2 
+11:04:57.720 DEBUG 处理脚本: jquery1.11.0 
+11:04:57.720 DEBUG 网络脚本: jquery1.11.0 
+11:04:57.720 DEBUG 处理脚本: main 
+11:04:57.720 DEBUG 输出scriptData 
+11:04:57.720 DEBUG 准备输出html! 
+11:04:57.720 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+11:04:57.720 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+11:04:57.722 INFO  发送重新页面需要刷新命令! 
+11:04:57.723 INFO  主要逻辑文件写出成功! 
+11:05:05.801 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:05:05.802 INFO  --------------------------- 开始编译 --------------------------- 
+11:05:05.802 INFO  程序运行目录: D:\work\National history lecture hall 
+11:05:05.802 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:05:05.802 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:05:05.802 DEBUG 读取网页标题: 页面 
+11:05:05.802 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:05:05.802 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:05:05.802 INFO  开始处理模块: home 
+11:05:05.806 DEBUG 缓存模板: home./src/page/home.page 
+11:05:05.806 DEBUG 模板home处理用时: 4 毫秒! 
+11:05:05.806 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:05:05.806 DEBUG css中的资源处理完毕! 
+11:05:05.806 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:05:05.809 INFO  处理字体:{} 
+11:05:05.810 INFO  使用postcss处理完毕! 用时: 4 毫秒 
+11:05:05.810 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:05:05.810 INFO  正在处理script! 
+11:05:05.811 INFO  工程中只有一个页面! 
+11:05:05.812 DEBUG 选择将js合并到html中! 
+11:05:05.823 INFO  js中的资源处理完毕! 
+11:05:05.823 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:05:05.823 DEBUG 外部脚本数量: 2 
+11:05:05.823 DEBUG 处理脚本: jquery1.11.0 
+11:05:05.823 DEBUG 网络脚本: jquery1.11.0 
+11:05:05.823 DEBUG 处理脚本: main 
+11:05:05.823 DEBUG 输出scriptData 
+11:05:05.823 DEBUG 准备输出html! 
+11:05:05.823 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+11:05:05.823 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+11:05:05.825 INFO  发送重新页面需要刷新命令! 
+11:05:05.826 INFO  主要逻辑文件写出成功! 
+11:05:57.758 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:05:57.759 INFO  --------------------------- 开始编译 --------------------------- 
+11:05:57.759 INFO  程序运行目录: D:\work\National history lecture hall 
+11:05:57.759 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:05:57.759 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:05:57.759 DEBUG 读取网页标题: 页面 
+11:05:57.759 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:05:57.759 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:05:57.759 INFO  开始处理模块: home 
+11:05:57.765 DEBUG 缓存模板: home./src/page/home.page 
+11:05:57.765 DEBUG 模板home处理用时: 6 毫秒! 
+11:05:57.765 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:05:57.765 DEBUG css中的资源处理完毕! 
+11:05:57.765 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:05:57.768 INFO  处理字体:{} 
+11:05:57.769 INFO  使用postcss处理完毕! 用时: 4 毫秒 
+11:05:57.769 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:05:57.769 INFO  正在处理script! 
+11:05:57.770 INFO  工程中只有一个页面! 
+11:05:57.771 DEBUG 选择将js合并到html中! 
+11:05:57.788 INFO  js中的资源处理完毕! 
+11:05:57.788 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:05:57.788 DEBUG 外部脚本数量: 2 
+11:05:57.788 DEBUG 处理脚本: jquery1.11.0 
+11:05:57.788 DEBUG 网络脚本: jquery1.11.0 
+11:05:57.788 DEBUG 处理脚本: main 
+11:05:57.788 DEBUG 输出scriptData 
+11:05:57.788 DEBUG 准备输出html! 
+11:05:57.788 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+11:05:57.788 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+11:05:57.790 INFO  发送重新页面需要刷新命令! 
+11:05:57.792 INFO  主要逻辑文件写出成功! 
+11:06:07.709 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:06:07.709 INFO  --------------------------- 开始编译 --------------------------- 
+11:06:07.709 INFO  程序运行目录: D:\work\National history lecture hall 
+11:06:07.709 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:06:07.709 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:06:07.709 DEBUG 读取网页标题: 页面 
+11:06:07.709 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:06:07.710 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:06:07.710 INFO  开始处理模块: home 
+11:06:07.715 DEBUG 缓存模板: home./src/page/home.page 
+11:06:07.716 DEBUG 模板home处理用时: 6 毫秒! 
+11:06:07.716 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:06:07.716 DEBUG css中的资源处理完毕! 
+11:06:07.716 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:06:07.718 INFO  处理字体:{} 
+11:06:07.719 INFO  使用postcss处理完毕! 用时: 3 毫秒 
+11:06:07.719 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:06:07.719 INFO  正在处理script! 
+11:06:07.720 INFO  工程中只有一个页面! 
+11:06:07.722 DEBUG 选择将js合并到html中! 
+11:06:07.734 INFO  js中的资源处理完毕! 
+11:06:07.734 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:06:07.734 DEBUG 外部脚本数量: 2 
+11:06:07.734 DEBUG 处理脚本: jquery1.11.0 
+11:06:07.734 DEBUG 网络脚本: jquery1.11.0 
+11:06:07.734 DEBUG 处理脚本: main 
+11:06:07.734 DEBUG 输出scriptData 
+11:06:07.734 DEBUG 准备输出html! 
+11:06:07.734 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+11:06:07.734 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+11:06:07.736 INFO  发送重新页面需要刷新命令! 
+11:06:07.737 INFO  主要逻辑文件写出成功! 
+11:13:20.876 INFO  file change: D:\work\National history lecture hall\src\page\home.page 
+11:13:20.877 INFO  --------------------------- 开始编译 --------------------------- 
+11:13:20.877 INFO  程序运行目录: D:\work\National history lecture hall 
+11:13:20.877 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\page\home.page 
+11:13:20.877 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:13:20.877 DEBUG 读取网页标题: 页面 
+11:13:20.877 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, min-cardimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+11:13:20.877 DEBUG 模块 home 因名称重复被重命名为 home0 
+11:13:20.877 INFO  开始处理模块: home 
+11:13:20.885 DEBUG 缓存模板: home./src/page/home.page 
+11:13:20.885 DEBUG 模板home处理用时: 8 毫秒! 
+11:13:20.885 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+11:13:20.885 DEBUG css中的资源处理完毕! 
+11:13:20.885 DEBUG 使用postcss处理样式，使用了1个插件! 
+11:13:20.887 INFO  处理字体:{} 
+11:13:20.888 INFO  使用postcss处理完毕! 用时: 3 毫秒 
+11:13:20.888 DEBUG 需要经过特殊处理的css: [["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+11:13:20.888 INFO  正在处理script! 
+11:13:20.888 INFO  工程中只有一个页面! 
+11:13:20.890 DEBUG 选择将js合并到html中! 
+11:13:20.903 INFO  js中的资源处理完毕! 
+11:13:20.903 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true}] 
+11:13:20.903 DEBUG 外部脚本数量: 2 
+11:13:20.903 DEBUG 处理脚本: jquery1.11.0 
+11:13:20.903 DEBUG 网络脚本: jquery1.11.0 
+11:13:20.903 DEBUG 处理脚本: main 
+11:13:20.903 DEBUG 输出scriptData 
+11:13:20.903 DEBUG 准备输出html! 
+11:13:20.904 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+11:13:20.904 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+11:13:20.910 INFO  发送重新页面需要刷新命令! 
+11:13:20.911 INFO  主要逻辑文件写出成功! 

@@ -1,0 +1,47 @@
+<template>
+  <div class="home">
+    <div class="box">
+      <img class="button left" src="@|one-0.png|">
+      <img class="button right" src="@|one-1.png|">
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.box {
+  width: 995px;
+  height: 559px;
+  background-image: url('@|one-2.png|');
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+.button.left {
+  left: 40px;
+}
+.button.right {
+  right: 40px;
+}
+</style>
