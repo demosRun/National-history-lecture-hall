@@ -69,11 +69,11 @@ li {
 
 [template="swiper"] .swiper-content {
   width: 990px;
-  height: 260px;
+  height: 220px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 26%;
+  top: 35%;
   margin: auto;
 }
 
@@ -102,6 +102,7 @@ li {
   bottom: 10px;
   cursor: pointer;
   z-index: 999;
+  display: none;
 }
 
 [template="swiper"] .swiper-content li span {
@@ -110,7 +111,7 @@ li {
 
 [template="swiper"] .swiper-content li .num {
   position: absolute;
-  font-size: 30px;
+  font-size: 26px;
   color: white;
   right: 10px;
   top: -10px;
@@ -122,6 +123,10 @@ li {
 [template="swiper"] .swiper-content li.active .num {
   font-size: 38px;
   color: #f0c48c;
+}
+
+[template="swiper"] .swiper-content li.active .player {
+  display: block;
 }
 
 [template="swiper"] .button {
@@ -192,6 +197,12 @@ li {
   line-height: 24px;
   width: 180px;
 }
+
+[template="home"] .people-box {
+  position: absolute;
+  right: 50px;
+  top: 0;
+}
 </style>
     <!-- 附属css文件 -->
     <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
@@ -202,6 +213,7 @@ li {
     <!-- 页面区域 -->
     <div class="home ox" template="home">
     <div class="box">
+      <img class="people-box" src="./static/resource/people-1.png">
       <!-- 轮播图区域 -->
       <div class="swiper-box" template="swiper">
     <img class="button left" src="./static/resource/one-0.png" :tap="prev">
@@ -310,7 +322,7 @@ owo.script = {
             pagination: owo.query('.pagination')[0],
             autoplay: 3000,
             showSlider: 3,
-            width: 44,
+            width: 42,
             step: 0.6,
             slideChange: function slideChange(ind) {
               // console.log(ind)

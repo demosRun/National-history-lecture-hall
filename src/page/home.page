@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <div class="box">
+      <img class="people-box" src="@|people-1.png|"/>
       <!-- 轮播图区域 -->
       <temple name="swiper" src="./src/module/swiperBox.owo"></temple>
       <div class="video-name"></div>
@@ -47,5 +48,10 @@
   bottom: 45px;
   line-height: 24px;
   width: 180px;
+}
+.people-box {
+  position: absolute;
+  right: 50px;
+  top: 0;
 }
 </style>

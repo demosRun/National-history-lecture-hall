@@ -83,7 +83,7 @@
         pagination: owo.query('.pagination')[0],
         autoplay: 3000,
         showSlider: 3,
-        width: 44,
+        width: 42,
         step: 0.6,
         slideChange: function (ind) {
           // console.log(ind)
@@ -114,11 +114,11 @@
 <style lang="less">
 .swiper-content {
 	width: 990px;
-  height: 260px;
+  height: 220px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 26%;
+  top: 35%;
   margin: auto;
   li {
     position: absolute;
@@ -141,13 +141,14 @@
       bottom: 10px;
       cursor: pointer;
       z-index: 999;
+      display: none;
     }
     span {
       display: none;
     }
     .num {
       position: absolute;
-      font-size: 30px;
+      font-size: 26px;
       color: white;
       right: 10px;
       top: -10px;
@@ -161,7 +162,9 @@
       font-size: 38px;
       color: #f0c48c;
     }
-    
+    .player {
+      display: block;
+    }
   }
 }
 .button {
