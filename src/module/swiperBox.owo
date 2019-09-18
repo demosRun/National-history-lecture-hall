@@ -1,0 +1,198 @@
+<template>
+  <div class="swiper-box">
+    <img class="button left" src="@|one-0.png|" :tap="prev">
+    <img class="button right" src="@|one-1.png|" :tap="next">
+    <ul class="swiper-content">
+      <li>
+        <span class="name">名字1</span>
+        <span class="info">介绍的文字1</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字2</span>
+        <span class="info">介绍的文字2</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字3</span>
+        <span class="info">介绍的文字3</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字4</span>
+        <span class="info">介绍的文字4</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字5</span>
+        <span class="info">介绍的文字5</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字6</span>
+        <span class="info">介绍的文字6</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字7</span>
+        <span class="info">介绍的文字7</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+      <li>
+        <span class="name">名字8</span>
+        <span class="info">介绍的文字8</span>
+        <div class="num"></div>
+        <img class="player" src="@|play.png|" :tap="play"/>
+        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+      </li>
+    </ul>
+    <!-- 页码 -->
+    <div class="pagination clear"></div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    data: {},
+    created: function () {
+      const content = owo.query('.swiper-content')[0]
+      for (let ind = 0; ind < content.children.length; ind++) {
+        const item = content.children[ind]
+        item.getElementsByClassName('num')[0].innerText = ind + 1 < 10 ? '0' + (ind + 1) : ind + 1
+      }
+      // 初始广播一次
+      const item = content.children[0]
+      owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML
+      owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML
+
+      this.swiper = swiperIt.init(content, {
+        pagination: owo.query('.pagination')[0],
+        autoplay: 3000,
+        showSlider: 3,
+        width: 44,
+        step: 0.6,
+        slideChange: function (ind) {
+          // console.log(ind)
+          const item = content.children[ind]
+          owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML
+          owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML
+        },
+        onmouseout: function (ind) {
+          const videoList = owo.query('video')
+          for (let ind = 0; ind < videoList.length; ind++) {
+            videoList[ind].pause()
+          }
+        }
+      })
+    },
+    next: function () {
+      this.swiper.next()
+    },
+    prev: function () {
+      this.swiper.prev()
+    },
+    play: function () {
+      this.$event.target.parentNode.getElementsByTagName('video')[0].play()
+    }
+  }
+</script>
+
+<style lang="less">
+.swiper-content {
+	width: 990px;
+  height: 260px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 26%;
+  margin: auto;
+  li {
+    position: absolute;
+    background-size: 100% 100%;
+    cursor: pointer;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    transition: all 0.4s linear;
+    border-radius: 10px;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 10px;
+    }
+    .player {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      cursor: pointer;
+      z-index: 999;
+    }
+    span {
+      display: none;
+    }
+    .num {
+      position: absolute;
+      font-size: 30px;
+      color: white;
+      right: 10px;
+      top: -10px;
+      letter-spacing: 4px;
+      font-weight: bold;
+      font-family: "Microsoft YaHei";
+    }
+  }
+  li.active {
+    .num {
+      font-size: 38px;
+      color: #f0c48c;
+    }
+    
+  }
+}
+.button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 5;
+}
+.button.left {
+  left: 40px;
+}
+.button.right {
+  right: 40px;
+}
+.pagination {
+  position: absolute;
+  height: 10px;
+  right: 20px;
+  bottom: 50px;
+  .pagination-item {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    border-radius: 50%;
+    float: left;
+    background-color: #815a2b;
+  }
+  .active {
+    background-color: #ffdcdc;
+  }
+}
+</style>

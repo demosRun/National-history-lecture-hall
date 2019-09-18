@@ -1,11 +1,10 @@
 <template>
   <div class="home">
     <div class="box">
-      <img class="button left" src="@|one-0.png|">
-      <img class="button right" src="@|one-1.png|">
-      <ul>
-        <li></li>
-      </ul>
+      <!-- 轮播图区域 -->
+      <temple name="swiper" src="./src/module/swiperBox.owo"></temple>
+      <div class="video-name"></div>
+      <div class="video-info"></div>
     </div>
   </div>
 </template>
@@ -13,7 +12,6 @@
 <script>
   module.exports = {
     created: function () {
-
     }
   }
 </script>
@@ -31,17 +29,23 @@
   bottom: 0;
   margin: auto;
 }
-.button {
+.video-name {
+  color: white;
+  font-size: 20px;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  cursor: pointer;
+  left: 430px;
+  bottom: 70px;
+  line-height: 24px;
+  width: 180px;
+  font-weight: bold;
 }
-.button.left {
-  left: 40px;
-}
-.button.right {
-  right: 40px;
+.video-info {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  left: 440px;
+  bottom: 45px;
+  line-height: 24px;
+  width: 180px;
 }
 </style>
