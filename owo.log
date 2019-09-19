@@ -1,0 +1,255 @@
+16:10:19.705 INFO  --------------------------- 开始编译 --------------------------- 
+16:10:19.705 INFO  程序运行目录: D:\work\National history lecture hall 
+16:10:19.705 INFO  首次启动! 
+16:10:19.705 INFO  生成版本号: 25sni7s8t7e 
+16:10:19.719 INFO  清理资源文件夹: D:\work\National history lecture hall\dist\static 
+16:10:19.719 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static 
+16:10:19.719 INFO  创建文件夹: D:\work\National history lecture hall\dist\static 
+16:10:19.719 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:10:19.719 DEBUG 读取网页标题: 页面 
+16:10:19.719 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:10:19.720 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:10:19.720 INFO  开始处理模块: home 
+16:10:19.747 INFO  开始处理模块: home 
+16:10:19.822 DEBUG 缓存模板: swiperundefined 
+16:10:19.831 DEBUG 模板home处理用时: 85 毫秒! 
+16:10:19.837 DEBUG 缓存模板: home./src/page/home.page 
+16:10:19.837 DEBUG 模板home处理用时: 117 毫秒! 
+16:10:19.838 INFO  文件夹不存在: D:/work/National history lecture hall/dist/static/resource 
+16:10:19.838 INFO  创建文件夹: D:/work/National history lecture hall/dist/static/resource 
+16:10:19.839 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/one-2.png"] 
+16:10:19.839 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+16:10:19.841 DEBUG css中的资源处理完毕! 
+16:10:19.841 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:10:19.885 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static\css 
+16:10:19.885 INFO  创建文件夹: D:\work\National history lecture hall\dist\static\css 
+16:10:19.885 INFO  开始处理附属css中的资源 
+16:10:19.886 INFO  附属css中的资源处理完毕! 
+16:10:19.886 INFO  处理字体:{} 
+16:10:20.033 INFO  使用postcss处理完毕! 用时: 192 毫秒 
+16:10:20.033 DEBUG 需要经过特殊处理的css: [["[template=\"swiper\"] .swiper-box:",".swiper-box[template=\"swiper\"]:"],["[template=\"swiper\"] .swiper-box ",".swiper-box[template=\"swiper\"] "],["[template=\"swiper\"] .swiper-box{",".swiper-box[template=\"swiper\"]{"],["[template=\"swiper\"] div:","div[template=\"swiper\"]:"],["[template=\"swiper\"] div ","div[template=\"swiper\"] "],["[template=\"swiper\"] div{","div[template=\"swiper\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:10:20.034 INFO  正在处理script! 
+16:10:20.034 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/people-1.png"] 
+16:10:20.034 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+16:10:20.035 INFO  工程中只有一个页面! 
+16:10:20.036 INFO  文件夹不存在: D:\work\National history lecture hall\dist\static\js 
+16:10:20.036 INFO  创建文件夹: D:\work\National history lecture hall\dist\static\js 
+16:10:20.036 DEBUG 选择将js合并到html中! 
+16:10:20.930 INFO  js中的资源处理完毕! 
+16:10:20.931 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+16:10:20.931 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true},{"name":"swiper","src":"./src/resource/swiper.js"}] 
+16:10:20.931 DEBUG 外部脚本数量: 3 
+16:10:20.931 DEBUG 处理脚本: jquery1.11.0 
+16:10:20.931 DEBUG 网络脚本: jquery1.11.0 
+16:10:20.931 DEBUG 处理脚本: main 
+16:10:20.931 INFO  读取文件: D:\work\National history lecture hall\src\main.js 
+16:10:20.931 DEBUG 处理脚本: swiper 
+16:10:20.931 INFO  读取文件: D:\work\National history lecture hall\src\resource\swiper.js 
+16:10:20.931 DEBUG 输出scriptData 
+16:10:20.932 DEBUG 准备输出html! 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:10:20.932 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/one-0.png","D:/work/National history lecture hall/src/resource/one-1.png","D:/work/National history lecture hall/src/resource/play.png"] 
+16:10:20.932 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+16:10:20.934 INFO  发送重新页面需要刷新命令! 
+16:10:20.980 INFO  主要逻辑文件写出成功! 
+16:10:20.982 INFO  读取成功: D:\work\National history lecture hall\src\main.css 
+16:10:20.982 DEBUG 处理资源: ["D:/work/National history lecture hall/src/resource/bg.jpg"] 
+16:10:20.982 DEBUG 资源目录: D:/work/National history lecture hall/dist/static/resource 
+16:10:20.983 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+16:10:20.983 INFO  读取成功: D:\work\National history lecture hall\src\main.js 
+16:10:20.983 INFO  读取成功: D:\work\National history lecture hall\src\resource\swiper.js 
+16:10:21.166 INFO  写入文件: D:\work\National history lecture hall\dist\static\css\main.css 
+16:10:21.167 INFO  写入文件: D:\work\National history lecture hall\dist\static\js\autoReload.js 
+16:10:21.167 INFO  写入文件: D:\work\National history lecture hall\dist\static\js\main.js 
+16:10:21.175 INFO  写入文件: D:\work\National history lecture hall\dist\static\js\swiper.js 
+16:18:56.336 INFO  file change: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:18:56.337 INFO  --------------------------- 开始编译 --------------------------- 
+16:18:56.337 INFO  程序运行目录: D:\work\National history lecture hall 
+16:18:56.337 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:18:56.337 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:18:56.337 DEBUG 读取网页标题: 页面 
+16:18:56.337 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:18:56.337 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:18:56.337 INFO  开始处理模块: home 
+16:18:56.348 INFO  开始处理模块: home 
+16:18:56.372 DEBUG 缓存模板: swiperundefined 
+16:18:56.383 DEBUG 模板home处理用时: 35 毫秒! 
+16:18:56.388 DEBUG 缓存模板: home./src/page/home.page 
+16:18:56.388 DEBUG 模板home处理用时: 51 毫秒! 
+16:18:56.388 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+16:18:56.388 DEBUG css中的资源处理完毕! 
+16:18:56.388 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:18:56.393 INFO  处理字体:{} 
+16:18:56.396 INFO  使用postcss处理完毕! 用时: 8 毫秒 
+16:18:56.396 DEBUG 需要经过特殊处理的css: [["[template=\"swiper\"] .swiper-box:",".swiper-box[template=\"swiper\"]:"],["[template=\"swiper\"] .swiper-box ",".swiper-box[template=\"swiper\"] "],["[template=\"swiper\"] .swiper-box{",".swiper-box[template=\"swiper\"]{"],["[template=\"swiper\"] div:","div[template=\"swiper\"]:"],["[template=\"swiper\"] div ","div[template=\"swiper\"] "],["[template=\"swiper\"] div{","div[template=\"swiper\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:18:56.396 INFO  正在处理script! 
+16:18:56.396 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:18:56.396 INFO  工程中只有一个页面! 
+16:18:56.398 DEBUG 选择将js合并到html中! 
+16:18:56.443 INFO  js中的资源处理完毕! 
+16:18:56.443 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true},{"name":"swiper","src":"./src/resource/swiper.js"}] 
+16:18:56.443 DEBUG 外部脚本数量: 3 
+16:18:56.443 DEBUG 处理脚本: jquery1.11.0 
+16:18:56.443 DEBUG 网络脚本: jquery1.11.0 
+16:18:56.443 DEBUG 处理脚本: main 
+16:18:56.443 DEBUG 处理脚本: swiper 
+16:18:56.443 DEBUG 输出scriptData 
+16:18:56.443 DEBUG 准备输出html! 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.444 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:18:56.446 INFO  发送重新页面需要刷新命令! 
+16:18:56.448 INFO  主要逻辑文件写出成功! 
+16:20:02.697 INFO  file change: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:02.698 INFO  --------------------------- 开始编译 --------------------------- 
+16:20:02.698 INFO  程序运行目录: D:\work\National history lecture hall 
+16:20:02.698 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:02.698 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:20:02.698 DEBUG 读取网页标题: 页面 
+16:20:02.698 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:20:02.698 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:20:02.698 INFO  开始处理模块: home 
+16:20:02.701 INFO  开始处理模块: home 
+16:20:02.724 DEBUG 缓存模板: swiperundefined 
+16:20:02.734 DEBUG 模板home处理用时: 33 毫秒! 
+16:20:02.737 DEBUG 缓存模板: home./src/page/home.page 
+16:20:02.737 DEBUG 模板home处理用时: 39 毫秒! 
+16:20:02.738 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+16:20:02.738 DEBUG css中的资源处理完毕! 
+16:20:02.738 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:20:02.743 INFO  处理字体:{} 
+16:20:02.745 INFO  使用postcss处理完毕! 用时: 7 毫秒 
+16:20:02.745 DEBUG 需要经过特殊处理的css: [["[template=\"swiper\"] .swiper-box:",".swiper-box[template=\"swiper\"]:"],["[template=\"swiper\"] .swiper-box ",".swiper-box[template=\"swiper\"] "],["[template=\"swiper\"] .swiper-box{",".swiper-box[template=\"swiper\"]{"],["[template=\"swiper\"] div:","div[template=\"swiper\"]:"],["[template=\"swiper\"] div ","div[template=\"swiper\"] "],["[template=\"swiper\"] div{","div[template=\"swiper\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:20:02.745 INFO  正在处理script! 
+16:20:02.745 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:02.746 INFO  工程中只有一个页面! 
+16:20:02.748 DEBUG 选择将js合并到html中! 
+16:20:02.782 INFO  js中的资源处理完毕! 
+16:20:02.782 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true},{"name":"swiper","src":"./src/resource/swiper.js"}] 
+16:20:02.782 DEBUG 外部脚本数量: 3 
+16:20:02.782 DEBUG 处理脚本: jquery1.11.0 
+16:20:02.782 DEBUG 网络脚本: jquery1.11.0 
+16:20:02.782 DEBUG 处理脚本: main 
+16:20:02.782 DEBUG 处理脚本: swiper 
+16:20:02.782 DEBUG 输出scriptData 
+16:20:02.783 DEBUG 准备输出html! 
+16:20:02.783 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.784 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:02.785 INFO  发送重新页面需要刷新命令! 
+16:20:02.787 INFO  主要逻辑文件写出成功! 
+16:20:10.628 INFO  file change: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:10.629 INFO  --------------------------- 开始编译 --------------------------- 
+16:20:10.629 INFO  程序运行目录: D:\work\National history lecture hall 
+16:20:10.629 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:10.629 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:20:10.629 DEBUG 读取网页标题: 页面 
+16:20:10.629 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:20:10.629 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:20:10.629 INFO  开始处理模块: home 
+16:20:10.632 INFO  开始处理模块: home 
+16:20:10.660 DEBUG 缓存模板: swiperundefined 
+16:20:10.667 DEBUG 模板home处理用时: 35 毫秒! 
+16:20:10.671 DEBUG 缓存模板: home./src/page/home.page 
+16:20:10.671 DEBUG 模板home处理用时: 42 毫秒! 
+16:20:10.671 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+16:20:10.671 DEBUG css中的资源处理完毕! 
+16:20:10.671 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:20:10.678 INFO  处理字体:{} 
+16:20:10.680 INFO  使用postcss处理完毕! 用时: 9 毫秒 
+16:20:10.680 DEBUG 需要经过特殊处理的css: [["[template=\"swiper\"] .swiper-box:",".swiper-box[template=\"swiper\"]:"],["[template=\"swiper\"] .swiper-box ",".swiper-box[template=\"swiper\"] "],["[template=\"swiper\"] .swiper-box{",".swiper-box[template=\"swiper\"]{"],["[template=\"swiper\"] div:","div[template=\"swiper\"]:"],["[template=\"swiper\"] div ","div[template=\"swiper\"] "],["[template=\"swiper\"] div{","div[template=\"swiper\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:20:10.680 INFO  正在处理script! 
+16:20:10.680 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:10.681 INFO  工程中只有一个页面! 
+16:20:10.682 DEBUG 选择将js合并到html中! 
+16:20:10.706 INFO  js中的资源处理完毕! 
+16:20:10.706 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true},{"name":"swiper","src":"./src/resource/swiper.js"}] 
+16:20:10.706 DEBUG 外部脚本数量: 3 
+16:20:10.706 DEBUG 处理脚本: jquery1.11.0 
+16:20:10.706 DEBUG 网络脚本: jquery1.11.0 
+16:20:10.706 DEBUG 处理脚本: main 
+16:20:10.706 DEBUG 处理脚本: swiper 
+16:20:10.706 DEBUG 输出scriptData 
+16:20:10.707 DEBUG 准备输出html! 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.707 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:10.709 INFO  发送重新页面需要刷新命令! 
+16:20:10.727 INFO  主要逻辑文件写出成功! 
+16:20:59.351 INFO  file change: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:59.352 INFO  --------------------------- 开始编译 --------------------------- 
+16:20:59.352 INFO  程序运行目录: D:\work\National history lecture hall 
+16:20:59.352 INFO  刷新模式,变化目录: D:\work\National history lecture hall\src\module\swiperBox.owo 
+16:20:59.352 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+16:20:59.352 DEBUG 读取网页标题: 页面 
+16:20:59.352 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"},{"name":"format-detection","content":"telephone=no, email=no"},{"name":"apple-mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-status-bar-style","content":"white"},{"name":"renderer","content":"webkit"},{"http-equiv":"X-UA-Compatible","content":"IE=edge,chrome=1"},{"name":"filetype","content":"1"},{"name":"publishedtype","content":"1"},{"name":"pagetype","content":"2"},{"name":"screen-orientation","content":"landscape"},{"name":"x5-orientation","content":"landscape"},{"name":"full-screen","content":"yes"},{"name":"x5-fullscreen","content":"true"},{"name":"browsermode","content":"application"},{"name":"x5-page-mode","content":"app"}] 
+16:20:59.352 DEBUG 模块 home 因名称重复被重命名为 home0 
+16:20:59.352 INFO  开始处理模块: home 
+16:20:59.358 INFO  开始处理模块: home 
+16:20:59.384 DEBUG 缓存模板: swiperundefined 
+16:20:59.393 DEBUG 模板home处理用时: 35 毫秒! 
+16:20:59.398 DEBUG 缓存模板: home./src/page/home.page 
+16:20:59.398 DEBUG 模板home处理用时: 46 毫秒! 
+16:20:59.399 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-2.png 
+16:20:59.399 DEBUG css中的资源处理完毕! 
+16:20:59.399 DEBUG 使用postcss处理样式，使用了1个插件! 
+16:20:59.402 INFO  处理字体:{} 
+16:20:59.404 INFO  使用postcss处理完毕! 用时: 5 毫秒 
+16:20:59.404 DEBUG 需要经过特殊处理的css: [["[template=\"swiper\"] .swiper-box:",".swiper-box[template=\"swiper\"]:"],["[template=\"swiper\"] .swiper-box ",".swiper-box[template=\"swiper\"] "],["[template=\"swiper\"] .swiper-box{",".swiper-box[template=\"swiper\"]{"],["[template=\"swiper\"] div:","div[template=\"swiper\"]:"],["[template=\"swiper\"] div ","div[template=\"swiper\"] "],["[template=\"swiper\"] div{","div[template=\"swiper\"]{"],["[template=\"home\"] .home:",".home[template=\"home\"]:"],["[template=\"home\"] .home ",".home[template=\"home\"] "],["[template=\"home\"] .home{",".home[template=\"home\"]{"],["[template=\"home\"] div:","div[template=\"home\"]:"],["[template=\"home\"] div ","div[template=\"home\"] "],["[template=\"home\"] div{","div[template=\"home\"]{"]] 
+16:20:59.404 INFO  正在处理script! 
+16:20:59.404 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:59.405 INFO  工程中只有一个页面! 
+16:20:59.406 DEBUG 选择将js合并到html中! 
+16:20:59.432 INFO  js中的资源处理完毕! 
+16:20:59.432 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"},{"name":"main","src":"./src/main.js","resource":true},{"name":"swiper","src":"./src/resource/swiper.js"}] 
+16:20:59.432 DEBUG 外部脚本数量: 3 
+16:20:59.432 DEBUG 处理脚本: jquery1.11.0 
+16:20:59.432 DEBUG 网络脚本: jquery1.11.0 
+16:20:59.432 DEBUG 处理脚本: main 
+16:20:59.432 DEBUG 处理脚本: swiper 
+16:20:59.432 DEBUG 输出scriptData 
+16:20:59.432 DEBUG 准备输出html! 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/people-1.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-0.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/one-1.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.432 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.433 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.433 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.433 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.433 DEBUG 忽略文件: D:/work/National history lecture hall/src/resource/play.png 
+16:20:59.434 INFO  发送重新页面需要刷新命令! 
+16:20:59.436 INFO  主要逻辑文件写出成功! 

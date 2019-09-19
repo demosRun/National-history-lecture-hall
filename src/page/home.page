@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="box">
-      <img class="people-box" src="@|people-1.png|"/>
+      <img class="people-box" src="@|people-1.png|" :tap="changeImg"/>
       <!-- 轮播图区域 -->
       <temple name="swiper" src="./src/module/swiperBox.owo"></temple>
       <div class="video-name"></div>
@@ -13,6 +13,9 @@
 <script>
   module.exports = {
     created: function () {
+    },
+    changeImg: function () {
+      owo.tool.fadeChangeImage(owo.query('.people-box')[0], '@|people-1.png|')
     }
   }
 </script>

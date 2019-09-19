@@ -1,62 +1,62 @@
 <template>
   <div class="swiper-box">
-    <img class="button left" src="@|one-0.png|" :tap="prev">
-    <img class="button right" src="@|one-1.png|" :tap="next">
+    <img class="button left" src="@|one-0.png|" o-hover="grow" :tap="prev">
+    <img class="button right" src="@|one-1.png|" o-hover="grow" :tap="next">
     <ul class="swiper-content">
       <li>
         <span class="name">名字1</span>
         <span class="info">介绍的文字1</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字2</span>
         <span class="info">介绍的文字2</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字3</span>
         <span class="info">介绍的文字3</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字4</span>
         <span class="info">介绍的文字4</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字5</span>
         <span class="info">介绍的文字5</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字6</span>
         <span class="info">介绍的文字6</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字7</span>
         <span class="info">介绍的文字7</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字8</span>
         <span class="info">介绍的文字8</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" :tap="play"/>
+        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
     </ul>

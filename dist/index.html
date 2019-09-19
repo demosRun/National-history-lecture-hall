@@ -66,6 +66,17 @@ ul {
 li {
   list-style: none;
 }
+.owo-hover-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.owo-hover-grow:hover, .owo-hover-grow:focus, .owo-hover-grow:active {
+  transform: scale(1.1);
+}
 
 [template="swiper"] .swiper-content {
   width: 990px;
@@ -213,66 +224,66 @@ li {
     <!-- 页面区域 -->
     <div class="home ox" template="home">
     <div class="box">
-      <img class="people-box" src="./static/resource/people-1.png">
+      <img class="people-box" src="./static/resource/people-1.png" :tap="changeImg">
       <!-- 轮播图区域 -->
       <div class="swiper-box" template="swiper">
-    <img class="button left" src="./static/resource/one-0.png" :tap="prev">
-    <img class="button right" src="./static/resource/one-1.png" :tap="next">
+    <img class="button left owo-hover-grow" src="./static/resource/one-0.png" :tap="prev">
+    <img class="button right owo-hover-grow" src="./static/resource/one-1.png" :tap="next">
     <ul class="swiper-content">
       <li>
         <span class="name">名字1</span>
         <span class="info">介绍的文字1</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字2</span>
         <span class="info">介绍的文字2</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字3</span>
         <span class="info">介绍的文字3</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字4</span>
         <span class="info">介绍的文字4</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字5</span>
         <span class="info">介绍的文字5</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字6</span>
         <span class="info">介绍的文字6</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字7</span>
         <span class="info">介绍的文字7</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
       <li>
         <span class="name">名字8</span>
         <span class="info">介绍的文字8</span>
         <div class="num"></div>
-        <img class="player" src="./static/resource/play.png" :tap="play">
+        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
     </ul>
@@ -303,6 +314,9 @@ var owo = {
 owo.script = {
   "home": {
     "created": function created() {},
+    "changeImg": function changeImg() {
+      owo.tool.fadeChangeImage(owo.query('.people-box')[0], './static/resource/people-1.png');
+    },
     "template": {
       "swiper": {
         "data": {},

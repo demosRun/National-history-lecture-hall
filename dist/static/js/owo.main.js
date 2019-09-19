@@ -1,4 +1,4 @@
-// Thu Sep 19 2019 09:20:56 GMT+0800 (GMT+08:00)
+// Thu Sep 19 2019 16:20:59 GMT+0800 (GMT+08:00)
 
 /* 方法合集 */
 var _owo = {
@@ -266,28 +266,33 @@ _owo.ready = (function() {               //这个函数返回whenReady()函数
 _owo.ready(_owo.showPage)
 
 
+/**
+ * 以渐变方式更换图片
+ * @param  {dom} el       dom元素
+ * @param  {string} imgSrc     新的图片路径
+ * @param  {number} time       动画时长
+ */
 
+owo.tool.fadeChangeImage = function (el, imgSrc, time) {
+  if (!el || !imgSrc) return
+  time = time || 300
+  el.style.transition = 'opacity ' + time + 'ms linear'
+  el.style.opacity = '0'
+  setTimeout(() => {
+    // 根据标签修改图片
+    if (el.localName === 'img') {
+      el.src = imgSrc
+    } else {
+      el.style.backgroundImage = 'url("' + imgSrc + '")'
+    }
+    el.style.opacity = ''
+    setTimeout(() => {
+      el.style.transition = ''
+    }, time)
+  }, time)
+}
 
 _owo._event_tap = function (tempDom, callBack) {
-  // 变量
-  var startTime = 0
-  var isMove = false
-  tempDom.addEventListener('touchstart', function() {
-    startTime = Date.now();
-  })
-  tempDom.addEventListener('touchmove', function() {
-    isMove = true
-  })
-  tempDom.addEventListener('touchend', function(e) {
-    if (Date.now() - startTime < 300 && !isMove) {
-      callBack(e)
-    }
-    // 清零
-    startTime = 0;
-    isMove = false
-  })
-}
-_owo._event_value = function (tempDom, callBack) {
   // 变量
   var startTime = 0
   var isMove = false
