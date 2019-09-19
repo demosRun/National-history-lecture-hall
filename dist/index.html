@@ -131,7 +131,7 @@ li {
 
 [template="swiper"] .button {
   position: absolute;
-  top: 0;
+  top: 13%;
   bottom: 0;
   margin: auto;
   cursor: pointer;
@@ -330,7 +330,7 @@ owo.script = {
               owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
               owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
             },
-            onmouseout: function onmouseout(ind) {
+            start: function start(ind) {
               var videoList = owo.query('video');
 
               for (var _ind = 0; _ind < videoList.length; _ind++) {

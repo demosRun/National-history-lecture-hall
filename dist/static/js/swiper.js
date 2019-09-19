@@ -1,7 +1,6 @@
 var swiperIt = {
+  timer: null,
   init: function (cont, config) {
-    // 定时器
-    var timer = null
     this.config = config
     var _this = this
     var showSlider = _this.config.showSlider || 5
@@ -65,21 +64,37 @@ var swiperIt = {
     // 判断是否自动轮播
     if (_this.config.autoplay) {
       // 鼠标悬浮停止轮播
-      cont.onmouseover = function () {clearInterval(timer);}
+      cont.onmouseover = _this.stopAutoPlay.bind(_this)
       // 鼠标移出开始轮播
-      cont.onmouseout = function () {
-        timer = setInterval(function() {
-          _this.next()
-        }, _this.config.autoplay)
-        if (_this.config.onmouseout) {
-          _this.config.onmouseout(this.activeIndex)
-        }
-      }
-      // 开启自动轮播
-      setTimeout(function () {timer = setInterval(function () {_this.next()}, _this.config.autoplay);}, 0)
+      cont.onmouseout = _this.startAutoPlay.bind(_this)
+      // 当前窗口得到焦点
+      window.onfocus = _this.startAutoPlay.bind(_this)
+      // 当前窗口失去焦点
+      window.onblur = _this.stopAutoPlay.bind(_this)
+      setTimeout(() => {
+        _this.startAutoPlay()
+      }, 0)
     }
 
     return this
+  },
+  startAutoPlay: function () {
+    var _this = this
+    if (this.timer) return
+    // 开启自动轮播
+    this.timer = setInterval(function () {
+      _this.next()
+    }, _this.config.autoplay)
+    console.log('开启轮播!', _this.timer)
+    // 事件回调
+    if (_this.config.start) {
+      _this.config.start(this.activeIndex)
+    }
+  },
+  stopAutoPlay: function () {
+    console.log('停止轮播!', this.timer)
+    clearInterval(this.timer)
+    this.timer = null
   },
   move: function () {
     if (this.config.pagination) {

@@ -91,7 +91,7 @@
           owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML
           owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML
         },
-        onmouseout: function (ind) {
+        start: function (ind) {
           const videoList = owo.query('video')
           for (let ind = 0; ind < videoList.length; ind++) {
             videoList[ind].pause()
@@ -169,7 +169,7 @@
 }
 .button {
   position: absolute;
-  top: 0;
+  top: 13%;
   bottom: 0;
   margin: auto;
   cursor: pointer;
