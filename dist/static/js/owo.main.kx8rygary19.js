@@ -1,4 +1,89 @@
-// Thu Sep 19 2019 16:20:59 GMT+0800 (GMT+08:00)
+// Thu Sep 19 2019 17:46:19 GMT+0800 (GMT+08:00)
+
+"use strict";
+
+// 存储页面基本信息
+var owo = {
+  // 页面默认入口 如果没有设置 则取第一个页面为默认页面
+  entry: "home",
+  // 全局方法变量
+  tool: {},
+  // 框架状态变量
+  state: {}
+};
+/*
+  存储每个页面的函数
+  键名：页面名称
+  键值：方法列表
+*/
+
+owo.script = {
+  "home": {
+    "created": function created() {},
+    "changeImg": function changeImg() {
+      owo.tool.fadeChangeImage(owo.query('.people-box')[0], './static/resource/people-1.png');
+    },
+    "template": {
+      "swiper": {
+        "created": function created() {
+          var content = owo.query('.swiper-content')[0];
+
+          for (var ind = 0; ind < content.children.length; ind++) {
+            var _item = content.children[ind];
+            _item.getElementsByClassName('num')[0].innerText = ind + 1 < 10 ? '0' + (ind + 1) : ind + 1;
+          } // 初始广播一次
+
+
+          var item = content.children[0];
+          owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
+          owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
+          owo.query('.people-box')[0].src = item.getElementsByClassName('main-image')[0].src;
+          this.swiper = swiperIt.init(content, {
+            pagination: owo.query('.pagination')[0],
+            autoplay: 3000,
+            showSlider: 3,
+            width: 42,
+            step: 0.6,
+            slideChange: function slideChange(ind) {
+              // console.log(ind)
+              var item = content.children[ind];
+              owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
+              owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
+              owo.tool.fadeChangeImage(owo.query('.people-box')[0], item.getElementsByClassName('main-image')[0].src);
+            },
+            start: function start(ind) {
+              var videoList = owo.query('video');
+
+              for (var _ind = 0; _ind < videoList.length; _ind++) {
+                videoList[_ind].pause();
+              }
+
+              var playerList = owo.query('.player');
+
+              for (var _ind2 = 0; _ind2 < playerList.length; _ind2++) {
+                playerList[_ind2].style.display = '';
+              }
+            }
+          });
+        },
+        "next": function next() {
+          this.swiper.next();
+        },
+        "prev": function prev() {
+          this.swiper.prev();
+        },
+        "play": function play() {
+          this.$event.target.style.display = 'none';
+          var video = this.$event.target.parentNode.getElementsByTagName('video');
+          if (video[0]) video[0].play();
+          var showImg = this.$event.target.parentNode.getElementsByClassName('show-img');
+          if (showImg[0]) showImg[0].style.display = 'none';
+        },
+        "prop": {}
+      }
+    }
+  }
+};
 
 /* 方法合集 */
 var _owo = {

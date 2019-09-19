@@ -1,0 +1,208 @@
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.owo-hover-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.owo-hover-grow:hover, .owo-hover-grow:focus, .owo-hover-grow:active {
+  transform: scale(1.1);
+}
+
+[template="swiper"] .swiper-content {
+  width: 990px;
+  height: 220px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+  margin: auto;
+}
+
+[template="swiper"] .swiper-content li {
+  position: absolute;
+  background-size: 100% 100%;
+  cursor: pointer;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  transition: all 0.4s linear;
+  border-radius: 10px;
+}
+
+[template="swiper"] .swiper-content li video,
+[template="swiper"] .swiper-content li embed {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 10px;
+}
+
+[template="swiper"] .swiper-content li .player {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+[template="swiper"] .swiper-content li span {
+  display: none;
+}
+
+[template="swiper"] .swiper-content li .num {
+  position: absolute;
+  font-size: 26px;
+  color: white;
+  right: 10px;
+  top: -10px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+
+[template="swiper"] .swiper-content li .main-image {
+  display: none;
+}
+
+[template="swiper"] .swiper-content li .show-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+[template="swiper"] .swiper-content li.active .num {
+  font-size: 38px;
+  color: #f0c48c;
+}
+
+[template="swiper"] .swiper-content li.active .player {
+  display: block;
+}
+
+[template="swiper"] .button {
+  position: absolute;
+  top: 13%;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  z-index: 5;
+}
+
+[template="swiper"] .button.left {
+  left: 40px;
+}
+
+[template="swiper"] .button.right {
+  right: 40px;
+}
+
+[template="swiper"] .pagination {
+  position: absolute;
+  height: 10px;
+  right: 20px;
+  bottom: 50px;
+}
+
+[template="swiper"] .pagination .pagination-item {
+  width: 8px;
+  height: 8px;
+  margin: 0 4px;
+  border-radius: 50%;
+  float: left;
+  background-color: #815a2b;
+}
+
+[template="swiper"] .pagination .active {
+  background-color: #ffdcdc;
+}
+[template="home"] .box {
+  width: 995px;
+  height: 559px;
+  background-image: url('../resource/one-2.png');
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+[template="home"] .video-name {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  left: 430px;
+  bottom: 70px;
+  line-height: 24px;
+  width: 180px;
+  font-weight: bold;
+}
+
+[template="home"] .video-info {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  left: 440px;
+  bottom: 45px;
+  line-height: 24px;
+  width: 180px;
+}
+
+[template="home"] .people-box {
+  position: absolute;
+  right: 50px;
+  top: 0;
+}

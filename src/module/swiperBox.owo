@@ -7,6 +7,9 @@
         <span class="name">名字1</span>
         <span class="info">介绍的文字1</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <!-- 普通视频形式 -->
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -14,13 +17,17 @@
         <span class="name">名字2</span>
         <span class="info">介绍的文字2</span>
         <div class="num"></div>
-        <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+        <img class="main-image" src="@|people-1.png|"/>
+        <!-- 人民视频代码 -->
+        <embed name="_v_p_651" width="800" height="495" src="http://tv.people.com.cn/img/2011ptv2/playerByOsmf.swf" wmode="opaque" allowfullscreen="true" allowscriptaccess="always" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" flashvars="id=/pvservice/xml/2019/9/6/507a636e-2cff-4761-9a62-040643f72a1e.xml&amp;skip=1&amp;showid=pvpShowDiv&amp;width=800&amp;height=495&amp;nodeid=413792&amp;cdn=100%2C0%2C0%2C0&amp;sl=5&amp;key=" type="application/x-shockwave-flash">
       </li>
       <li>
         <span class="name">名字3</span>
         <span class="info">介绍的文字3</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <!-- 普通视频形式 -->
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -28,6 +35,8 @@
         <span class="name">名字4</span>
         <span class="info">介绍的文字4</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -35,6 +44,8 @@
         <span class="name">名字5</span>
         <span class="info">介绍的文字5</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -42,6 +53,8 @@
         <span class="name">名字6</span>
         <span class="info">介绍的文字6</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -49,6 +62,8 @@
         <span class="name">名字7</span>
         <span class="info">介绍的文字7</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -56,6 +71,8 @@
         <span class="name">名字8</span>
         <span class="info">介绍的文字8</span>
         <div class="num"></div>
+        <img class="main-image" src="@|people-1.png|"/>
+        <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg"/>
         <img class="player" src="@|play.png|" o-hover="grow" :tap="play"/>
         <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
       </li>
@@ -78,7 +95,7 @@
       const item = content.children[0]
       owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML
       owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML
-
+      owo.query('.people-box')[0].src = item.getElementsByClassName('main-image')[0].src
       this.swiper = swiperIt.init(content, {
         pagination: owo.query('.pagination')[0],
         autoplay: 3000,
@@ -90,11 +107,16 @@
           const item = content.children[ind]
           owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML
           owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML
+          owo.tool.fadeChangeImage(owo.query('.people-box')[0], item.getElementsByClassName('main-image')[0].src)
         },
         start: function (ind) {
           const videoList = owo.query('video')
           for (let ind = 0; ind < videoList.length; ind++) {
             videoList[ind].pause()
+          }
+          const playerList = owo.query('.player')
+          for (let ind = 0; ind < playerList.length; ind++) {
+            playerList[ind].style.display = ''
           }
         }
       })
@@ -106,7 +128,11 @@
       this.swiper.prev()
     },
     play: function () {
-      this.$event.target.parentNode.getElementsByTagName('video')[0].play()
+      this.$event.target.style.display = 'none'
+      const video = this.$event.target.parentNode.getElementsByTagName('video')
+      if (video[0]) video[0].play()
+      const showImg = this.$event.target.parentNode.getElementsByClassName('show-img')
+      if (showImg[0]) showImg[0].style.display = 'none'
     }
   }
 </script>
@@ -129,7 +155,7 @@
     bottom: 0;
     transition: all 0.4s linear;
     border-radius: 10px;
-    video {
+    video, embed {
       width: 100%;
       height: 100%;
       object-fit: fill;
@@ -155,6 +181,18 @@
       letter-spacing: 4px;
       font-weight: bold;
       font-family: "Microsoft YaHei";
+    }
+    .main-image {
+      display: none;
+    }
+    .show-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
     }
   }
   li.active {

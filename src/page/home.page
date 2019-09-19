@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="box">
-      <img class="people-box" src="@|people-1.png|" :tap="changeImg"/>
+      <img class="people-box" src="" :tap="changeImg"/>
       <!-- 轮播图区域 -->
       <temple name="swiper" src="./src/module/swiperBox.owo"></temple>
       <div class="video-name"></div>

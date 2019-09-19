@@ -1,379 +1,131 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <title>页面</title>
-    <!-- 页面的元信息 -->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    <!-- 页面主样式文件 -->
-<style>
-body, html, .ox {
-  padding: 0;
-  margin: 0;
-}
 
-.owo-animation {
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
-  transform-style: preserve-3d;
-}
-.owo-animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.owo-animation-forward {
-  z-index: 99;
-}
+<head>
+  <title>页面</title>
+  <!-- 页面的元信息 -->
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.main.kx8rygary19.css">
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+  <script src="http://tv.people.com.cn/img/player/v.js"></script>
 
-a:link, a:visited {
-  text-decoration: none;
-}
+</head>
 
-/* 清除浮动 */
-.clear:after {
-  content: "";
-  height: 0;
-  line-height: 0;
-  display: block;
-  visibility: hidden;
-  clear: both;
-  zoom: 1;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-.owo-hover-grow {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-}
-.owo-hover-grow:hover, .owo-hover-grow:focus, .owo-hover-grow:active {
-  transform: scale(1.1);
-}
-
-[template="swiper"] .swiper-content {
-  width: 990px;
-  height: 220px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 35%;
-  margin: auto;
-}
-
-[template="swiper"] .swiper-content li {
-  position: absolute;
-  background-size: 100% 100%;
-  cursor: pointer;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  transition: all 0.4s linear;
-  border-radius: 10px;
-}
-
-[template="swiper"] .swiper-content li video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  border-radius: 10px;
-}
-
-[template="swiper"] .swiper-content li .player {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  cursor: pointer;
-  z-index: 999;
-  display: none;
-}
-
-[template="swiper"] .swiper-content li span {
-  display: none;
-}
-
-[template="swiper"] .swiper-content li .num {
-  position: absolute;
-  font-size: 26px;
-  color: white;
-  right: 10px;
-  top: -10px;
-  letter-spacing: 4px;
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-}
-
-[template="swiper"] .swiper-content li.active .num {
-  font-size: 38px;
-  color: #f0c48c;
-}
-
-[template="swiper"] .swiper-content li.active .player {
-  display: block;
-}
-
-[template="swiper"] .button {
-  position: absolute;
-  top: 13%;
-  bottom: 0;
-  margin: auto;
-  cursor: pointer;
-  z-index: 5;
-}
-
-[template="swiper"] .button.left {
-  left: 40px;
-}
-
-[template="swiper"] .button.right {
-  right: 40px;
-}
-
-[template="swiper"] .pagination {
-  position: absolute;
-  height: 10px;
-  right: 20px;
-  bottom: 50px;
-}
-
-[template="swiper"] .pagination .pagination-item {
-  width: 8px;
-  height: 8px;
-  margin: 0 4px;
-  border-radius: 50%;
-  float: left;
-  background-color: #815a2b;
-}
-
-[template="swiper"] .pagination .active {
-  background-color: #ffdcdc;
-}
-[template="home"] .box {
-  width: 995px;
-  height: 559px;
-  background-image: url('./static/resource/one-2.png');
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-[template="home"] .video-name {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  left: 430px;
-  bottom: 70px;
-  line-height: 24px;
-  width: 180px;
-  font-weight: bold;
-}
-
-[template="home"] .video-info {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  left: 440px;
-  bottom: 45px;
-  line-height: 24px;
-  width: 180px;
-}
-
-[template="home"] .people-box {
-  position: absolute;
-  right: 50px;
-  top: 0;
-}
-</style>
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-    
-    
-  </head>
-  <body>
-    <!-- 页面区域 -->
-    <div class="home ox" template="home">
+<body>
+  <!-- 页面区域 -->
+  <div class="home ox" template="home">
     <div class="box">
-      <img class="people-box" src="./static/resource/people-1.png" :tap="changeImg">
+      <img class="people-box" src="" :tap="changeImg">
       <!-- 轮播图区域 -->
       <div class="swiper-box" template="swiper">
-    <img class="button left owo-hover-grow" src="./static/resource/one-0.png" :tap="prev">
-    <img class="button right owo-hover-grow" src="./static/resource/one-1.png" :tap="next">
-    <ul class="swiper-content">
-      <li>
-        <span class="name">名字1</span>
-        <span class="info">介绍的文字1</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字2</span>
-        <span class="info">介绍的文字2</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字3</span>
-        <span class="info">介绍的文字3</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字4</span>
-        <span class="info">介绍的文字4</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字5</span>
-        <span class="info">介绍的文字5</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字6</span>
-        <span class="info">介绍的文字6</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字7</span>
-        <span class="info">介绍的文字7</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-      <li>
-        <span class="name">名字8</span>
-        <span class="info">介绍的文字8</span>
-        <div class="num"></div>
-        <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
-        <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
-      </li>
-    </ul>
-    <!-- 页码 -->
-    <div class="pagination clear"></div>
-  </div>
+        <img class="button left owo-hover-grow" src="./static/resource/one-0.png" :tap="prev">
+        <img class="button right owo-hover-grow" src="./static/resource/one-1.png" :tap="next">
+        <ul class="swiper-content">
+          <li>
+            <span class="name">名字1</span>
+            <span class="info">介绍的文字1</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <!-- 普通视频形式 -->
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字2</span>
+            <span class="info">介绍的文字2</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <!-- 人民视频代码 -->
+            
+            <script>showPlayer({id:"/pvservice/xml/2019/9/18/517f16d9-8222-492e-9948-10233013f326.xml",width:800,height:495});</script>
+          </li>
+          <li>
+            <span class="name">名字3</span>
+            <span class="info">介绍的文字3</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <!-- 普通视频形式 -->
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字4</span>
+            <span class="info">介绍的文字4</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字5</span>
+            <span class="info">介绍的文字5</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字6</span>
+            <span class="info">介绍的文字6</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字7</span>
+            <span class="info">介绍的文字7</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+          <li>
+            <span class="name">名字8</span>
+            <span class="info">介绍的文字8</span>
+            <div class="num"></div>
+            <img class="main-image" src="./static/resource/people-1.png">
+            <img class="show-img" src="http://tv.people.com.cn/NMediaFile/2019/0918/MAIN201909181102005624198298302.jpg">
+            <img class="player owo-hover-grow" src="./static/resource/play.png" :tap="play">
+            <video src="https://puge-10017157.cos.ap-shanghai.myqcloud.com/show/mp4/dandelion.mp4"></video>
+          </li>
+        </ul>
+        <!-- 页码 -->
+        <div class="pagination clear"></div>
+      </div>
       <div class="video-name"></div>
       <div class="video-info"></div>
     </div>
   </div>
-    <!-- 框架script代码 --><script>"use strict";
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.main.kx8rygary19.js" type="text/javascript" charset="UTF-8"></script>
 
-// 存储页面基本信息
-var owo = {
-  // 页面默认入口 如果没有设置 则取第一个页面为默认页面
-  entry: "home",
-  // 全局方法变量
-  tool: {},
-  // 框架状态变量
-  state: {}
-};
-/*
-  存储每个页面的函数
-  键名：页面名称
-  键值：方法列表
-*/
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/swiper.js" type="text/javascript" charset="UTF-8"></script>
+</body>
 
-owo.script = {
-  "home": {
-    "created": function created() {},
-    "changeImg": function changeImg() {
-      owo.tool.fadeChangeImage(owo.query('.people-box')[0], './static/resource/people-1.png');
-    },
-    "template": {
-      "swiper": {
-        "data": {},
-        "created": function created() {
-          var content = owo.query('.swiper-content')[0];
-
-          for (var ind = 0; ind < content.children.length; ind++) {
-            var _item = content.children[ind];
-            _item.getElementsByClassName('num')[0].innerText = ind + 1 < 10 ? '0' + (ind + 1) : ind + 1;
-          } // 初始广播一次
-
-
-          var item = content.children[0];
-          owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
-          owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
-          this.swiper = swiperIt.init(content, {
-            pagination: owo.query('.pagination')[0],
-            autoplay: 3000,
-            showSlider: 3,
-            width: 42,
-            step: 0.6,
-            slideChange: function slideChange(ind) {
-              // console.log(ind)
-              var item = content.children[ind];
-              owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
-              owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
-            },
-            start: function start(ind) {
-              var videoList = owo.query('video');
-
-              for (var _ind = 0; _ind < videoList.length; _ind++) {
-                videoList[_ind].pause();
-              }
-            }
-          });
-        },
-        "next": function next() {
-          this.swiper.next();
-        },
-        "prev": function prev() {
-          this.swiper.prev();
-        },
-        "play": function play() {
-          this.$event.target.parentNode.getElementsByTagName('video')[0].play();
-        },
-        "prop": {}
-      }
-    }
-  }
-};</script>
-<!-- 框架script文件 -->
-<script src="./static/js/owo.main.js" type="text/javascript" charset="UTF-8"></script>
-<!-- 调试-热刷新代码 -->
-<script src="./static/js/autoReload.js" type="text/javascript" charset="UTF-8"></script>
-
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/swiper.js" type="text/javascript"  charset="UTF-8"></script>
-  </body>
 </html>
