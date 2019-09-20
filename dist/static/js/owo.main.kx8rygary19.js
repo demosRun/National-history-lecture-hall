@@ -27,17 +27,17 @@ owo.script = {
       "swiper": {
         "created": function created() {
           var content = owo.query('.swiper-content')[0];
-
+          var _this = this
           for (var ind = 0; ind < content.children.length; ind++) {
             var _item = content.children[ind];
-            _item.getElementsByClassName('num')[0].innerText = ind + 1 < 10 ? '0' + (ind + 1) : ind + 1;
+            _item.querySelectorAll('.num')[0].innerText = ind + 1 < 10 ? '0' + (ind + 1) : ind + 1;
           } // 初始广播一次
 
 
           var item = content.children[0];
-          owo.query('.video-name')[0].innerHTML = item.getElementsByClassName('name')[0].innerHTML;
-          owo.query('.video-info')[0].innerHTML = item.getElementsByClassName('info')[0].innerHTML;
-          owo.query('.people-box')[0].src = item.getElementsByClassName('main-image')[0].src;
+          owo.query('.video-name')[0].innerHTML = item.querySelectorAll('.name')[0].innerHTML;
+          owo.query('.video-info')[0].innerHTML = item.querySelectorAll('.info')[0].innerHTML;
+          owo.query('.people-box')[0].src = item.querySelectorAll('.main-image')[0].src;
           this.swiper = swiperIt.init(content, {
             pagination: owo.query('.pagination')[0],
             autoplay: 3000,
@@ -65,9 +65,21 @@ owo.script = {
               }
             }
           });
+          // 注册滑动
+          owo.tool.touch({
+            el: document.body,
+            end: function (e) {
+              if (e.swipe[0] < -100) {
+                _this.prev()
+              }
+              if (e.swipe[0] > 100) {
+                _this.next()
+              }
+            }
+          })
         },
         "next": function next() {
-          this.swiper.next();
+          this.swiper.clickNext();
         },
         "prev": function prev() {
           this.swiper.prev();
@@ -363,7 +375,7 @@ owo.tool.fadeChangeImage = function (el, imgSrc, time) {
   time = time || 300
   el.style.transition = 'opacity ' + time + 'ms linear'
   el.style.opacity = '0'
-  setTimeout(() => {
+  setTimeout(function () {
     // 根据标签修改图片
     if (el.localName === 'img') {
       el.src = imgSrc
@@ -371,7 +383,7 @@ owo.tool.fadeChangeImage = function (el, imgSrc, time) {
       el.style.backgroundImage = 'url("' + imgSrc + '")'
     }
     el.style.opacity = ''
-    setTimeout(() => {
+    setTimeout(function () {
       el.style.transition = ''
     }, time)
   }, time)
@@ -395,4 +407,79 @@ _owo._event_tap = function (tempDom, callBack) {
     startTime = 0;
     isMove = false
   })
+}
+
+/**
+ * 滑动检测
+ * @param  {DOM} el 需要监测的dom元素
+ * @param  {Function} start   开始事件
+ * @param  {Function} touchmove   触摸移动事件
+ * @param  {Function} end   结束事件
+ */
+
+owo.tool.touch = function (config) {
+  var dom = config.el
+  // 判断是否已经处于监听状态
+  if (dom.getAttribute("monitor") == 'touch') return
+  var start = null
+  var end = null
+  var startTarget = null
+  // 设置监听标识
+  dom.setAttribute("monitor", "touch")
+  dom.addEventListener("touchstart", function (e) {
+    event = e.targetTouches[0] || e.originalEvent.targetTouches[0]
+    startTarget = e.target
+    start = end = [event.clientX, event.clientY]
+    if (config.start) config.start(event)
+  }, false)
+  dom.addEventListener("touchmove", function (e) {
+    event = e.targetTouches[0] || e.originalEvent.targetTouches[0]
+    end = [event.clientX, event.clientY]
+    if (config.moveing) config.moveing(event)
+  }, false)
+  dom.addEventListener("touchend", function (e) {
+    if (config.end) {
+      config.end({
+        target: startTarget,
+        start: start,
+        end: end,
+        swipe: [end[0] - start[0], end[1] - start[1]]
+      })
+    }
+  }, false)
+  // 监控鼠标事件
+  dom.addEventListener("mousedown", function (event) {
+    dom.addEventListener("mousemove", function (event) {
+      end = [event.clientX, event.clientY]
+      if (config.moveing) config.moveing(event)
+    }, false)
+    start = end = [event.clientX, event.clientY]
+    if (config.start) config.start(event)
+  }, false)
+  
+  dom.addEventListener("mouseup", function () {
+    // 移除监听
+    dom.removeEventListener("mousemove", function () {
+
+    }, false)
+    if (config.end) {
+      config.end({
+        target: startTarget,
+        start: start,
+        end: end,
+        swipe: [end[0] - start[0], end[1] - start[1]]
+      })
+    }
+  }, false)
+}
+
+owo.tool.getScreenInfo = function () {
+  // 有可能不兼容ie
+  return {
+    clientWidth: window.innerWidth,
+    clientHeight: window.innerHeight,
+    ratio: window.innerWidth / window.innerHeight,
+    // 缩放比例
+    devicePixelRatio: window.devicePixelRatio || 1
+  }
 }

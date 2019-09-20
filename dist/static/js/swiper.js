@@ -1,5 +1,6 @@
 var swiperIt = {
   timer: null,
+  busyTime: null,
   init: function (cont, config) {
     this.config = config
     var _this = this
@@ -72,7 +73,7 @@ var swiperIt = {
       window.onfocus = _this.startAutoPlay.bind(_this)
       // 当前窗口失去焦点
       window.onblur = _this.stopAutoPlay.bind(_this)
-      setTimeout(() => {
+      setTimeout(function () {
         _this.startAutoPlay()
       }, 0)
     }
@@ -82,17 +83,19 @@ var swiperIt = {
   startAutoPlay: function () {
     var _this = this
     _this.tempCheck = true
-    setTimeout(() => {
-      if (this.timer) return
-      if (!this.tempCheck) return
+    setTimeout(function () {
+      if (_this.timer) return
+      if (!_this.tempCheck) return
       // 开启自动轮播
-      this.timer = setInterval(function () {
-        _this.next()
+      _this.timer = setInterval(function () {
+        if (!_this.busy) {
+          _this.next()
+        }
       }, _this.config.autoplay)
       console.log('开启轮播!', _this.timer)
       // 事件回调
       if (_this.config.start) {
-        _this.config.start(this.activeIndex)
+        _this.config.start(_this.activeIndex)
       }
     }, 100)
     return false
@@ -115,7 +118,8 @@ var swiperIt = {
       this.config.slideChange(this.activeIndex)
     }
   },
-  next: function () {
+  next: function (lock) {
+    if (lock) this.busy = true
     if (this.config.pagination) {
       this.config.pagination.children[this.activeIndex].classList.remove('active')
     }
@@ -123,6 +127,17 @@ var swiperIt = {
     if (this.activeIndex >= this.contL.length) this.activeIndex = 0
     this.styleList.unshift(this.styleList.pop())
     this.move()
+    
+  },
+  clickNext: function () {
+    if (this.busyTime) clearTimeout(this.busyTime)
+    var _this = this
+    // this.busy = false
+    this.next(true)
+    this.busyTime = setTimeout(function () {
+      _this.busy = false
+      _this.busyTime = null
+    }, 600)
   },
   prev: function () {
     if (this.config.pagination) {
